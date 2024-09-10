@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      AppCalc by WSR
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -10,51 +10,51 @@
   <div class="content">
     <div class="content__screen">
       <div class="content__screen__top_screen">Top Screen</div>
-      <div class="content__screen__main_screen">Main Screen</div>
+      <div class="content__screen__main_screen">{{display}} <div class="content__screen__main_screen__underline"></div></div>      
     </div>
 
     <div class="content__keyboard">
 
       <div class="content__keyboard__key_row">
-        <div class="content__keyboard__key_row__key">%</div>
-        <div class="content__keyboard__key_row__key">CE</div>
-        <div class="content__keyboard__key_row__key">C</div>
-        <div class="content__keyboard__key_row__key">DEL</div>
+        <div class="content__keyboard__key_row__key content__keyboard__key_row__key__color_operator" (click)="pressKey('%')">%</div>
+        <div class="content__keyboard__key_row__key content__keyboard__key_row__key__color_operator" (click)="pressKey('CE')">CE</div>
+        <div class="content__keyboard__key_row__key content__keyboard__key_row__key__color_red" (click)="pressKey('C')">C</div>
+        <div class="content__keyboard__key_row__key content__keyboard__key_row__key__color_operator" (click)="pressKey('DEL')">DEL</div>
       </div>
 
       <div class="content__keyboard__key_row">
-        <div class="content__keyboard__key_row__key">1/x</div>
-        <div class="content__keyboard__key_row__key">X</div>
-        <div class="content__keyboard__key_row__key">1/2X</div>
-        <div class="content__keyboard__key_row__key">/</div>
+        <div class="content__keyboard__key_row__key content__keyboard__key_row__key__color_operator" (click)="pressKey('1/x')">1/x</div>
+        <div class="content__keyboard__key_row__key content__keyboard__key_row__key__color_operator" (click)="pressKey('Xx')">Xx</div>
+        <div class="content__keyboard__key_row__key content__keyboard__key_row__key__color_operator" (click)="pressKey('1/2x')">1/2X</div>
+        <div class="content__keyboard__key_row__key content__keyboard__key_row__key__color_operator" (click)="pressKey('/')">/</div>
       </div>
 
       <div class="content__keyboard__key_row">
-        <div class="content__keyboard__key_row__key">7</div>
-        <div class="content__keyboard__key_row__key">8</div>
-        <div class="content__keyboard__key_row__key">9</div>
-        <div class="content__keyboard__key_row__key">*</div>
+        <div class="content__keyboard__key_row__key" (click)="pressKey('7')">7</div>
+        <div class="content__keyboard__key_row__key" (click)="pressKey('8')">8</div>
+        <div class="content__keyboard__key_row__key" (click)="pressKey('9')">9</div>
+        <div class="content__keyboard__key_row__key content__keyboard__key_row__key__color_operator" (click)="pressKey('X')">*</div>
       </div>
 
       <div class="content__keyboard__key_row">
-        <div class="content__keyboard__key_row__key">4</div>
-        <div class="content__keyboard__key_row__key">5</div>
-        <div class="content__keyboard__key_row__key">6</div>
-        <div class="content__keyboard__key_row__key">-</div>
+        <div class="content__keyboard__key_row__key" (click)="pressKey('4')">4</div>
+        <div class="content__keyboard__key_row__key" (click)="pressKey('5')">5</div>
+        <div class="content__keyboard__key_row__key" (click)="pressKey('6')">6</div>
+        <div class="content__keyboard__key_row__key content__keyboard__key_row__key__color_operator" (click)="pressKey('-')">-</div>
       </div>
 
       <div class="content__keyboard__key_row">
-        <div class="content__keyboard__key_row__key">1</div>
-        <div class="content__keyboard__key_row__key">2</div>
-        <div class="content__keyboard__key_row__key">3</div>
-        <div class="content__keyboard__key_row__key">+</div>
+        <div class="content__keyboard__key_row__key" (click)="pressKey('1')">1</div>
+        <div class="content__keyboard__key_row__key" (click)="pressKey('2')">2</div>
+        <div class="content__keyboard__key_row__key" (click)="pressKey('3')">3</div>
+        <div class="content__keyboard__key_row__key content__keyboard__key_row__key__color_operator" (click)="pressKey('+')">+</div>
       </div>
 
       <div class="content__keyboard__key_row">
-        <div class="content__keyboard__key_row__key">+/-</div>
-        <div class="content__keyboard__key_row__key">0</div>
-        <div class="content__keyboard__key_row__key">,</div>
-        <div class="content__keyboard__key_row__key">=</div>
+        <div class="content__keyboard__key_row__key content__keyboard__key_row__key__color_operator" (click)="pressKey('+/-')">+/-</div>
+        <div class="content__keyboard__key_row__key" (click)="pressKey('0')">0</div>
+        <div class="content__keyboard__key_row__key" (click)="pressKey(',')">,</div>
+        <div class="content__keyboard__key_row__key content__keyboard__key_row__key__bg_color_lila" (click)="pressKey('=')">=</div>
       </div>
 
       

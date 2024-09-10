@@ -11,4 +11,8 @@ export class HomePage {
 
   constructor() {}
 
+  pressKey(valueKey:any){
+    this.display = valueKey;
+  }
+
 }
